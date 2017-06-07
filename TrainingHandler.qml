@@ -96,7 +96,7 @@ Item {
                     ColorAnimation { to: "blue"; duration: 500 }
                     PropertyAction { target: imgPractice1; property: "source"; value: "Image/Practice1.png" }
                     ColorAnimation { to: "transparent"; duration: 1000 }
-                    PropertyAction { target: txtExe1; property: "text"; value: "BA`I T�?P SU�C MA?NH"}
+                    PropertyAction { target: txtExe1; property: "text"; value: "BÀI TẬP SỨC MẠNH"}
                     PropertyAction { target: exerciseOption1; property: "color"; value: "#ffe699"}
                 }
 

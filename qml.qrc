@@ -18,7 +18,6 @@
         <file>Image/Practice1.png</file>
         <file>Image/Practice2.png</file>
         <file>Image/Practice3.png</file>
-        <file>TrainingHandler.qml</file>
         <file>Image/Finished_Practice1.png</file>
         <file>Image/Finished_Practice2.png</file>
         <file>Image/Finished_Practice3.png</file>
@@ -30,5 +29,6 @@
         <file>Image/neutral.png</file>
         <file>SettingHandler.qml</file>
         <file>SettingHandlerForm.ui.qml</file>
+        <file>TrainingHandler.qml</file>
     </qresource>
 </RCC>
