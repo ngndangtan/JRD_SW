@@ -136,7 +136,12 @@ Item {
                 onExited: {
                     parent.color="white"
                 }
-                onPressed: mainPageLoader.source="SettingHandler.qml"
+                onPressed:
+                {
+
+                    mainPageLoader.source="SettingHandler.qml"
+
+                }
             }
         }
     }
@@ -144,5 +149,6 @@ Item {
     {
         id:mainPageLoader
         anchors.fill:parent
+        focus: true
     }
 }

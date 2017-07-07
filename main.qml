@@ -9,6 +9,7 @@ ApplicationWindow {
     height: 640
     title: qsTr("JRD Software")
 
+
     MainHandler{
     }
 }
