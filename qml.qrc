@@ -33,5 +33,9 @@
         <file>Image/back_button_onenter.png</file>
         <file>Image/starscream.png</file>
         <file>Image/Congrats.jpg</file>
+        <file>Image/Congrats_1.jpg</file>
+        <file>game2.qml</file>
+        <file>game3.qml</file>
+        <file>performanceHandler.qml</file>
     </qresource>
 </RCC>

@@ -8,8 +8,6 @@ ApplicationWindow {
     width: 800
     height: 640
     title: qsTr("JRD Software")
-
-
     MainHandler{
     }
 }

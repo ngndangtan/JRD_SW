@@ -5,6 +5,14 @@ Item {
     id: mainHandlerForm
     width: 800
     height: 640
+    property bool train_exer1: false
+    property bool train_exer2: false
+    property bool train_exer3: false
+    property alias t1:mainHandlerForm.train_exer1
+    property alias t2:mainHandlerForm.train_exer2
+    property alias t3:mainHandlerForm.train_exer3
+
+
 
     Column {
         id: column
@@ -49,7 +57,9 @@ Item {
                 onExited: {
                     parent.color="white"
                 }
-                onPressed: mainPageLoader.source="TrainingHandler.qml"
+                onPressed: {
+                    mainHandlerForm.train_exer1=true;
+                    mainPageLoader.source="TrainingHandler.qml"}
             }
             Glow{
                 id: glowArea1
@@ -97,7 +107,7 @@ Item {
                 onExited: {
                     parent.color="white"
                 }
-                onPressed: mainPageLoader.source="PerformanceHandler.qml"
+                onPressed: mainPageLoader.source="performanceHandler.qml"
             }
         }
 

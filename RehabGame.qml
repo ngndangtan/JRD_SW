@@ -9,8 +9,10 @@ Item {
     property int position:0
     property int pre_position:0
     property int count : 0
-    property int set_goal:10
+    property int set_goal:1
+    property bool status_pic :false
     property alias count_forward: item_rehab.count
+    property alias status_game1:item_rehab.status_pic
 
     MouseArea {
         anchors.fill:parent
@@ -248,7 +250,7 @@ Item {
         }
         Image {
             id: image
-            x: parent.width- width
+            x: parent.width - width
             y: parent.height/3
             visible: true
             source: "Image/neutral.png"
@@ -279,7 +281,30 @@ Item {
                 }
             }
         }
-
+        Image {
+            id: finish_game
+            source: "Image/Congrats_1.jpg"
+            x: parent.width/4
+            y: parent.height/5+height/2
+            visible:status_pic
+            MouseArea{
+                id:finish_pic
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: {
+                    finish_game.source = "Image/Congrats.jpg";
+                }
+                onExited: {
+                    finish_game.source = "Image/Congrats_1.jpg";
+                }
+                onPressed:
+                {
+                    mainHandlerForm.train_exer2=true;
+                    mainHandlerForm.train_exer1=false;
+                    trainingPageLoader.source="TrainingHandler.qml";
+                }
+            }
+        }
     }
     Loader
     {
@@ -318,6 +343,19 @@ Item {
         }
 
         pre_position=position;
+        if(count>=set_goal)
+        {
+            status_pic =true;
+
+
+        }
+        if(count<set_goal)
+        {
+            status_pic =false;
+
+
+        }
+        status_game1=status_pic
     }
 }
 
