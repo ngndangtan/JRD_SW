@@ -5,9 +5,10 @@ import QtQuick.Layouts 1.0
 ApplicationWindow {
     id:appWindow
     visible: true
-    width: 800
-    height: 640
+    width: 1024
+    height: 600
     title: qsTr("JRD Software")
-    MainHandler{
+
+    MainMenu{
     }
 }
